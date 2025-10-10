@@ -1,0 +1,19 @@
+h1 { /* <- selecteur */
+	font-family: 'Comic Sans MS'; /* <- propriété */
+	color: hotpink;
+    
+}
+
+body{
+	font-family: 'Comic Sans MS';
+    color: hotpink;
+    background-color: pink;
+    text-align: center;
+}
+
+img{
+    border-radius: 50%; 
+    border:10px solid hotpink  /* bordure de l'image
+                                    solide = le style de bordure*/
+   
+}
