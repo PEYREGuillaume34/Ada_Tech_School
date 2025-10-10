@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="script.js"></script>
+    <title> Mon Formulaire</title>
+    </head>
+    
+    
+<body>
+    
+    <h1>Mes Citations</h1>
+    <h2>Gestionnaire de citations en ligne.</h2>
+    <h3 id="compteur">"0 citations"</h3>
+    <hr>
+
+<form id="formulaire">
+    <label for="citation">Citation :</label>
+    <input type="text" id="citation" name="citation" required>
+    <br><br>
+
+    <label for="auteur">Auteur / Autrice :</label>
+    <input type="text" id="auteur" name="auteur" required>
+    <br><br>
+
+    <button type="submit">Ajouter la citation</button>
+
+</form>
+
+
+<div id="quote-list">
+<div class="quote">
+    <p class="text">On ne naît pas femme, on le devient.</p>
+    <p class="author">Simone de Beauvoir</p>
+</div>
+
+</div>
+
+
+
+
+    </body>
+</html>
