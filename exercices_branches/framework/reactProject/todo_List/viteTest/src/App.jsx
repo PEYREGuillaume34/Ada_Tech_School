@@ -54,11 +54,15 @@ function App() {
       <button onClick={handleAdd}>Ajouter</button>
 
       <ul>
-        {items.map((item, index) => (
+        {items.map((item, index) => {
+          return(
+            <div>
+          <input
+          type="checkbox" />
           <li key={index}>{item}
-          <input type="checkbox" />
           <button onClick={() => handleDelete(index)}>❌</button></li>
-        ))}
+          </div>
+)})}
       </ul>
     </div>
   );

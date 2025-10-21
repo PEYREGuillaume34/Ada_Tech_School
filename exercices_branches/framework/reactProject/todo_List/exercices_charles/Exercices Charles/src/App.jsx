@@ -1,46 +1,19 @@
-import { useState } from 'react'
-import './App.css'
-
-// //Exercice 01
-
-// export default function App() {
-//   const [input, setInput] = useState("")
-
-//   return (
-//     <div>
-//       <input
-//         type="text"
-//         onChange={(e) => setInput(e.target.value)}
-//       />
-//       <p>{input}</p>
-//     </div>
-//   )
-// }
 
 
-//Exercice 02
+// Bonus
+
+
+import { useState } from 'react';
+import './App.css';
+import { SeeName } from './components/SeeName';
+
 export default function App() {
-const [input, setInput] = useState("")
-  const [items, setItems] = useState([])
+const names = ["Thomas", "Tristan", "Lionnel"];
 
-
-
-  return (
-    <div>
-      <input
-        type="submit"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-      />
-      <p>{input}</p>
-      {console.log("inpu",input)}
-
-      <ul>
-        {items.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
-    </div>
-  );
-
+  return( 
+  <>
+    <SeeName names={names} />
+  </>
+  )
 }
+

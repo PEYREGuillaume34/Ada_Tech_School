@@ -2,15 +2,16 @@ export const List = ({value, setValue}) => {
   const addList = (e) => {
     e.preventDefault()
     {console.log(e)}
+    const inputValue = e.target[0].value;
     const safeInputCopy = [...value]
-    safeInputCopy.push(e.target[0].value)
+    safeInputCopy.push(inputValue);
     setValue(safeInputCopy)
     // console.log(e.target[0].value)
     e.target.reset()
   }
   return (
     <>
-    <form onSubmit={(e) => addList(e)}>
+    <form onSubmit={addList}>
         <input/>
     </form>
     <ul>
