@@ -9,7 +9,7 @@ const calcProgressWidth = (value) => {
   return {
     width: (progress * 100) / value.length + "%",
     height: "20px",
-    backgroundImage: `url(https://i.pinimg.com/originals/ed/35/f8/ed35f861be81be2548e514085fb19385.gif)`,
+    backgroundImage: `url(https://i.gifer.com/GEBR.gif)`,
   };
 };
 
