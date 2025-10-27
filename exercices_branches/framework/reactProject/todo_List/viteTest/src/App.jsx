@@ -1,24 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-
-// Input
-
-// function App() {
-//   const [input, setInput] = useState("")
-
-//   return (
-//     <div>
-//       <input
-//         type="text"
-//         onChange={(e) => setInput(e.target.value)}
-
-//       />
-//       <p>{input}</p>
-//     </div>
-//   )
-// }
-
-// export default App
+import { Button } from './components/Button'
 
 
 
@@ -34,14 +16,16 @@ function App() {
     setInput(""); // réinitialise le champ
   };
 
- 
+
   const handleDelete = (index) => {
     // on crée un nouveau tableau sans l'élément à cet index
     const newItems = items.filter((_, i) => i !== index);
     // on met à jour la liste
     setItems(newItems);
   };
+  console.log("input", input);
 
+  
   return (
     <div>
       <input
@@ -50,20 +34,18 @@ function App() {
         onChange={(e) => setInput(e.target.value)}
       />
       <p>{input}</p>
-      {console.log("inpu",input)}
-      <button onClick={handleAdd}>Ajouter</button>
+      <Button onClick={handleAdd}>Ajouter ✅</Button>
 
       <ul>
-        {items.map((item, index) => {
-          return(
-            <div>
-          <input
-          type="checkbox" />
-          <li key={index}>{item}
-          <button onClick={() => handleDelete(index)}>❌</button></li>
-          </div>
-)})}
+        {items.map((item, index) => (
+          <li key={index}>
+            <input type="checkbox" />
+            {item}
+            <Button onClick={() => handleDelete(index)}>❌</Button>
+          </li>
+        ))}
       </ul>
+
     </div>
   );
 
@@ -72,19 +54,4 @@ function App() {
 export default App;
 
 
-
-// Correction Charles
-
-
-// import { useState } from 'react';
-// import './App.css';
-// import { List } from './components/List';
-
-// export default function App() {
-//   const [value, setValue] = useState([])
-
-//   return (
-//     <List value={value} setValue={setValue} />
-//   )
-// }
 

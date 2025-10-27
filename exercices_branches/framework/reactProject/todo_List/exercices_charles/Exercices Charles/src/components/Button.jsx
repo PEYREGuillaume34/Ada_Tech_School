@@ -1,7 +1,7 @@
 
 
-export const Button = ({ children, onClick = "..." }) => (
-  <button onClick={onClick}>
+export const Button = ({ children, toto = "..." }) => (
+  <button onClick={toto}>
     {children} {/* C'est ici que le contenu est injecté !*/}
   </button>
 );

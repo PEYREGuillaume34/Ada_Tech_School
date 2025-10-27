@@ -4,6 +4,7 @@ const calcProgressWidth = (value) => {
   value.forEach((element) => {
     if (element.isDone) {
       progress += 1;
+      
     }
   });
   return {

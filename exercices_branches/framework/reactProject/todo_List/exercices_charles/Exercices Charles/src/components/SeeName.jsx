@@ -199,12 +199,12 @@ export const SeeName = () => {
           }}
         />
 
-      <Button onClick={handleAddName}>Ajouter</Button>
+      <Button toto={handleAddName}>Ajouter</Button>
 
       {names.map((name) => (
         <div key={name}>
           <h1>Hello {name}</h1>
-          <Button onClick={() => handleDelete(name)}>❌</Button>
+          <Button toto={() => handleDelete(name)}>❌</Button>
         </div>
       ))}
 

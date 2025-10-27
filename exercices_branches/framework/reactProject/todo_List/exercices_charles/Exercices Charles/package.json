@@ -1,4 +1,4 @@
-{
+npm create vite@latest{
   "name": "exercices-charles",
   "private": true,
   "version": "0.0.0",
