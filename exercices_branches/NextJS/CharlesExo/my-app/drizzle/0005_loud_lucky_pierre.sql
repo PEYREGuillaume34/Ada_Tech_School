@@ -1,0 +1,1 @@
+CREATE TYPE "public"."skill_status" AS ENUM('undetermined', 'not_aquired', 'in_progress', 'acquired');
